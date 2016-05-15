@@ -1,0 +1,5 @@
+C:\Users\Andzej\Desktop\Banks\BanksDll\BanksDll\bin\Debug\BanksDll.dll
+C:\Users\Andzej\Desktop\Banks\BanksDll\BanksDll\bin\Debug\BanksDll.pdb
+C:\Users\Andzej\Desktop\Banks\BanksDll\BanksDll\obj\Debug\BanksDll.csprojResolveAssemblyReference.cache
+C:\Users\Andzej\Desktop\Banks\BanksDll\BanksDll\obj\Debug\BanksDll.dll
+C:\Users\Andzej\Desktop\Banks\BanksDll\BanksDll\obj\Debug\BanksDll.pdb
