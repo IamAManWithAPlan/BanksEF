@@ -7,9 +7,11 @@ namespace BanksDll.ClientValidators.PeselValidator
     {
         public bool Validate(string pesel)
         {
-            var validators = new LinkedList<IPeselValidator>();
-            validators.AddFirst(new PeselNumbersValidator());
-            validators.AddFirst(new PeselDateValidator());
+            var validators = new List<IPeselValidator>()
+            {
+                new PeselNumbersValidator(),
+                new PeselDateValidator()
+            };
             return validators.All(validator => validator.Validate(pesel));
         }
     }
