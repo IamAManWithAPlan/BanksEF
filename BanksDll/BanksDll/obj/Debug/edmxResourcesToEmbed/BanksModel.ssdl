@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BanksModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="AccountID" />
+    </Key>
+    <Property Name="AccountID" Type="int" Nullable="false" />
+    <Property Name="AccountNumber" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="AccountLogin" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="AccountPassword" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="FK_OwnerPesel" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="Casch" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Accounts">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="FKBankID" Type="int" Nullable="false" />
+    <Property Name="FKClientPesel" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="FKAccount_Number" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Bank">
+    <Key>
+      <PropertyRef Name="BankID" />
+    </Key>
+    <Property Name="BankID" Type="int" Nullable="false" />
+    <Property Name="BankName" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="BankCrucialNumbers" Type="varchar" MaxLength="11" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="ClientID" />
+    </Key>
+    <Property Name="ClientID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Surname" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Pesel" Type="varchar" MaxLength="11" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6035: The relationship 'FK__Account__FK_Owne__15502E78' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="FK__Account__FK_Owne__15502E78" />-->
+  <!--Errors Found During Generation:
+warning 6035: The relationship 'FK__Accounts__FKAcco__1ED998B2' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="FK__Accounts__FKAcco__1ED998B2" />-->
+  <Association Name="FK__Accounts__FKBank__1CF15040">
+    <End Role="Bank" Type="Self.Bank" Multiplicity="1" />
+    <End Role="Accounts" Type="Self.Accounts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bank">
+        <PropertyRef Name="BankID" />
+      </Principal>
+      <Dependent Role="Accounts">
+        <PropertyRef Name="FKBankID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <!--Errors Found During Generation:
+warning 6035: The relationship 'FK__Accounts__FKClie__1DE57479' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+        <Association Name="FK__Accounts__FKClie__1DE57479" />-->
+  <EntityContainer Name="BanksModelStoreContainer">
+    <EntitySet Name="Account" EntityType="Self.Account" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Accounts" EntityType="Self.Accounts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Bank" EntityType="Self.Bank" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Client" EntityType="Self.Client" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Accounts__FKBank__1CF15040" Association="Self.FK__Accounts__FKBank__1CF15040">
+      <End Role="Bank" EntitySet="Bank" />
+      <End Role="Accounts" EntitySet="Accounts" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

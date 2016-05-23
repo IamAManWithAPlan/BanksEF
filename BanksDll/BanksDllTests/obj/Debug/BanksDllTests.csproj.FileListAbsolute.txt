@@ -6,3 +6,16 @@ C:\Users\Andzej\Desktop\Banks\BanksDll\BanksDllTests\bin\Debug\BanksDll.pdb
 C:\Users\Andzej\Desktop\Banks\BanksDll\BanksDllTests\obj\Debug\BanksDllTests.csprojResolveAssemblyReference.cache
 C:\Users\Andzej\Desktop\Banks\BanksDll\BanksDllTests\obj\Debug\BanksDllTests.dll
 C:\Users\Andzej\Desktop\Banks\BanksDll\BanksDllTests\obj\Debug\BanksDllTests.pdb
+C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDllTests\bin\Debug\BanksDllTests.dll
+C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDllTests\bin\Debug\BanksDllTests.pdb
+C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDllTests\bin\Debug\BanksDll.dll
+C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDllTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDllTests\bin\Debug\EntityFramework.dll
+C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDllTests\bin\Debug\BanksDll.pdb
+C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDllTests\bin\Debug\EntityFramework.xml
+C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDllTests\obj\Debug\BanksDllTests.csprojResolveAssemblyReference.cache
+C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDllTests\obj\Debug\BanksDllTests.dll
+C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDllTests\obj\Debug\BanksDllTests.pdb
+C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDllTests\bin\Debug\BanksDllTests.dll.config
+C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDllTests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDllTests\bin\Debug\EntityFramework.SqlServer.xml

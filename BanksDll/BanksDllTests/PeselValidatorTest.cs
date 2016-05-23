@@ -1,4 +1,5 @@
-﻿using BanksDll.ClientValidators.PeselValidator;
+﻿using BanksDll.ClientValidators;
+using BanksDll.ClientValidators.PeselValidator;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BanksDllTests
@@ -9,17 +10,24 @@ namespace BanksDllTests
         [TestMethod]
         public void ValidatePeselDate()
         {
-            Assert.AreEqual(1994, new PeselDate().GetYearFromPesel("94120807274"));
-            Assert.AreEqual(12, new PeselDate().GetMouthFromPesel("94120807274"));
-            Assert.AreEqual(8, new PeselDate().GetDayFromPesel("94120807274"));
+            Assert.AreEqual(1959, new PeselDate().GetYearFromPesel("59050316201"));
+            Assert.AreEqual(5, new PeselDate().GetMouthFromPesel("59050316201"));
+            Assert.AreEqual(3, new PeselDate().GetDayFromPesel("59050316201"));
         }
 
         [TestMethod]
         public void ValidatePesel()
         {
-            IPeselValidator validator = new PeselValidator();
-            Assert.IsTrue(validator.Validate("94120807274"));
-            Assert.IsFalse(validator.Validate("94120807275"));
+            IAccountValidator validator = new PeselValidator();
+            var model = new AccountModel()
+            {
+                Name = "Janusz",
+                Surname = "Frameworka",
+                Password = "12345678",
+                RePassword = "12345678",
+                Pesel = "59050316201",
+            };
+            Assert.IsTrue(validator.Validate(model));
         }
     }
 }
