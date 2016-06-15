@@ -1,6 +1,6 @@
-﻿using BanksDll.ClientValidators;
-using BanksDll.ClientValidators.Interfaces;
-using BanksDll.ClientValidators.Validators;
+﻿using BanksDll.AccountFiles;
+using BanksDll.AccountFiles.Interfaces;
+using BanksDll.AccountFiles.Validators;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BanksDllTests
@@ -24,7 +24,7 @@ namespace BanksDllTests
             {
                 Name = "Janusz",
                 Surname = "Frameworka",
-                Password = "12345678",
+                AccountPassword = "12345678",
                 RePassword = "12345678",
                 Pesel = "59050316201",
             };

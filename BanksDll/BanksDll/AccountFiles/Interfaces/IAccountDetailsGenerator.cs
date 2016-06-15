@@ -1,4 +1,4 @@
-﻿namespace BanksDll.ClientValidators.Interfaces
+﻿namespace BanksDll.AccountFiles.Interfaces
 {
     public interface IAccountDetailsGenerator
     {

@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using BanksDll.ClientValidators.Interfaces;
-using BanksDll.ClientValidators.Validators;
+using BanksDll.AccountFiles.Interfaces;
+using BanksDll.AccountFiles.Validators;
 
-namespace BanksDll.ClientValidators
+namespace BanksDll.AccountFiles
 {
     public static class GenerateAccDetails
     {

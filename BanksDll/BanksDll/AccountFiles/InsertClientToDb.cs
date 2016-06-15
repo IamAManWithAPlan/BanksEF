@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using BanksDll.ClientValidators.Interfaces;
+using BanksDll.AccountFiles.Interfaces;
 
-namespace BanksDll.ClientValidators
+namespace BanksDll.AccountFiles
 {
     public class InsertClientToDb : IDbSave
     {

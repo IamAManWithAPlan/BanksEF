@@ -1,6 +1,6 @@
-﻿using BanksDll.ClientValidators.Interfaces;
+﻿using BanksDll.AccountFiles.Interfaces;
 
-namespace BanksDll.ClientValidators.Validators
+namespace BanksDll.AccountFiles.Validators
 {
     public class PasswordValidator : IAccountValidator
     {
@@ -9,7 +9,7 @@ namespace BanksDll.ClientValidators.Validators
 
         public bool Validate(AccountModel model)
         {
-            return AreSamePasswords(model.Password, model.RePassword) & IsRequiredPasswordLength(model.Password);
+            return AreSamePasswords(model.AccountPassword, model.RePassword) & IsRequiredPasswordLength(model.AccountPassword);
         }
 
         private static bool AreSamePasswords(string password, string password2)

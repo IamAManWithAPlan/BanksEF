@@ -1,16 +1,13 @@
 ﻿using System.Linq;
-using BanksDll;
-using BanksDll.ClientValidators;
-using BanksDll.ClientValidators.Interfaces;
+using BanksDll.AccountFiles.Interfaces;
 
-
-namespace BanksDll.ClientValidators
+namespace BanksDll.AccountFiles
 {
     public class BankAccountNumberGenerator : IAccountDetailsGenerator
     {
         public void Generate(AccountModel model)
         {
-            model.Number = GetCrucialNumber(model.BankName)+model.Pesel;
+            model.AccountNumber = GetCrucialNumber(model.BankName)+model.Pesel;
         }
 
         private static string GetCrucialNumber(string bankName)

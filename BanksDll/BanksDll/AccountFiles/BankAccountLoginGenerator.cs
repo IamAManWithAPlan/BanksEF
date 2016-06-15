@@ -1,6 +1,6 @@
-﻿using BanksDll.ClientValidators.Interfaces;
+﻿using BanksDll.AccountFiles.Interfaces;
 
-namespace BanksDll.ClientValidators
+namespace BanksDll.AccountFiles
 {
     public class BankAccountLoginGenerator : IAccountDetailsGenerator
     {
@@ -9,7 +9,7 @@ namespace BanksDll.ClientValidators
         private const int PeselNumbersToGet= 3;
         public void Generate(AccountModel model)
         {
-            model.Login = model.Name.Substring(0, NameLettersToGetLength) +
+            model.AccountLogin = model.Name.Substring(0, NameLettersToGetLength) +
                    model.Surname.Substring(0, SurNameLettersToGetLength) +
                    GenerateLoginNumbers(model);
         }

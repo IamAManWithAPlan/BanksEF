@@ -58,6 +58,25 @@
     <Compile Include="Account.cs">
       <DependentUpon>BankModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="AccountFiles\AccountModel.cs" />
+    <Compile Include="AccountFiles\BankAccountLoginGenerator.cs" />
+    <Compile Include="AccountFiles\BankAccountNumberGenerator.cs" />
+    <Compile Include="AccountFiles\GenerateAccDetails.cs" />
+    <Compile Include="AccountFiles\InsertAccountToDb.cs" />
+    <Compile Include="AccountFiles\InsertClientToDb.cs" />
+    <Compile Include="AccountFiles\Interfaces\IAccountDetailsGenerator.cs" />
+    <Compile Include="AccountFiles\Interfaces\IAccountValidator.cs" />
+    <Compile Include="AccountFiles\Interfaces\IDbSave.cs" />
+    <Compile Include="AccountFiles\Interfaces\IPeselValidator.cs" />
+    <Compile Include="AccountFiles\JoinAccountToClient.cs" />
+    <Compile Include="AccountFiles\Validators\FullModelValidate.cs" />
+    <Compile Include="AccountFiles\Validators\NameLengthValidator.cs" />
+    <Compile Include="AccountFiles\Validators\PasswordValidator.cs" />
+    <Compile Include="AccountFiles\Validators\PeselDataBaseValidator.cs" />
+    <Compile Include="AccountFiles\Validators\PeselDate.cs" />
+    <Compile Include="AccountFiles\Validators\PeselDateValidator.cs" />
+    <Compile Include="AccountFiles\Validators\PeselNumbersValidator.cs" />
+    <Compile Include="AccountFiles\Validators\PeselValidator.cs" />
     <Compile Include="Accounts.cs">
       <DependentUpon>BankModel.tt</DependentUpon>
     </Compile>
@@ -82,24 +101,6 @@
     <Compile Include="Client.cs">
       <DependentUpon>BankModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="ClientValidators\AccountModel.cs" />
-    <Compile Include="ClientValidators\BankAccountLoginGenerator.cs" />
-    <Compile Include="ClientValidators\BankAccountNumberGenerator.cs" />
-    <Compile Include="ClientValidators\GenerateAccDetails.cs" />
-    <Compile Include="ClientValidators\InsertAccountToDb.cs" />
-    <Compile Include="ClientValidators\InsertClientToDb.cs" />
-    <Compile Include="ClientValidators\Interfaces\IAccountDetailsGenerator.cs" />
-    <Compile Include="ClientValidators\Interfaces\IAccountValidator.cs" />
-    <Compile Include="ClientValidators\Interfaces\IDbSave.cs" />
-    <Compile Include="ClientValidators\Interfaces\IPeselValidator.cs" />
-    <Compile Include="ClientValidators\Validators\FullModelValidate.cs" />
-    <Compile Include="ClientValidators\Validators\NameLengthValidator.cs" />
-    <Compile Include="ClientValidators\Validators\PasswordValidator.cs" />
-    <Compile Include="ClientValidators\Validators\PeselDataBaseValidator.cs" />
-    <Compile Include="ClientValidators\Validators\PeselDate.cs" />
-    <Compile Include="ClientValidators\Validators\PeselDateValidator.cs" />
-    <Compile Include="ClientValidators\Validators\PeselNumbersValidator.cs" />
-    <Compile Include="ClientValidators\Validators\PeselValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>BankModel.tt</DependentUpon>

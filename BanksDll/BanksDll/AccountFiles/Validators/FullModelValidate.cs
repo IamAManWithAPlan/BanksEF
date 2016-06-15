@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using BanksDll.ClientValidators.Interfaces;
+using BanksDll.AccountFiles.Interfaces;
 
-namespace BanksDll.ClientValidators.Validators
+namespace BanksDll.AccountFiles.Validators
 {
     public static class FullModelValidate
     {
