@@ -29,7 +29,7 @@ namespace BanksDllTests
            GenerateAccDetails.Generate(model);
            InsertClientToDb client = new InsertClientToDb();
            InsertAccountToDb acc = new InsertAccountToDb();
-//            client.Save(model);
+            client.Save(model);
             acc.Save(model);
           // Assert.AreEqual("105059050316201",model.Number);
 
