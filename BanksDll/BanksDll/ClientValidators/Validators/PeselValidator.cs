@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using BanksDll.ClientValidators.Interfaces;
 
-namespace BanksDll.ClientValidators.PeselValidator
+
+namespace BanksDll.ClientValidators.Validators
 {
     public class PeselValidator : IAccountValidator
     {
@@ -11,7 +13,7 @@ namespace BanksDll.ClientValidators.PeselValidator
             {
                 new PeselNumbersValidator(),
                 new PeselDateValidator(),
-                new PeselDataBaseValidator(),
+                new PeselDataBaseValidator(),               
             };
             return validators.All(validator => validator.Validate(model.Pesel));
         }

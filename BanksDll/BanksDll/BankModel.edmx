@@ -14,7 +14,7 @@
           <Property Name="AccountLogin" Type="varchar" MaxLength="255" Nullable="false" />
           <Property Name="AccountPassword" Type="varchar" MaxLength="255" Nullable="false" />
           <Property Name="FK_OwnerPesel" Type="varchar" MaxLength="11" Nullable="false" />
-          <Property Name="Casch" Type="money" Nullable="false" />
+          <Property Name="Cash" Type="money" Nullable="false" />
         </EntityType>
         <EntityType Name="Accounts">
           <Key>
@@ -98,7 +98,7 @@ warning 6035: The relationship 'FK__Accounts__FKClie__3A81B327' has columns that
           <Property Name="AccountLogin" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="AccountPassword" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="FK_OwnerPesel" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Casch" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="Cash" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
         </EntityType>
         <EntityType Name="Accounts">
           <Key>
@@ -175,7 +175,7 @@ warning 6035: The relationship 'FK__Accounts__FKClie__3A81B327' has columns that
                 <ScalarProperty Name="AccountLogin" ColumnName="AccountLogin" />
                 <ScalarProperty Name="AccountPassword" ColumnName="AccountPassword" />
                 <ScalarProperty Name="FK_OwnerPesel" ColumnName="FK_OwnerPesel" />
-                <ScalarProperty Name="Casch" ColumnName="Casch" />
+                <ScalarProperty Name="Cash" ColumnName="Cash" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

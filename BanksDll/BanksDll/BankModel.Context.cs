@@ -18,8 +18,6 @@ namespace BanksDll
         public BanksEntities()
             : base("name=BanksEntities")
         {
-            var ensureDLLIsCopied =
-                System.Data.Entity.SqlServer.SqlProviderServices.Instance;
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

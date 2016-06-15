@@ -1,4 +1,4 @@
-﻿namespace BanksDll.ClientValidators.PeselValidator
+﻿namespace BanksDll.ClientValidators.Interfaces
 {
     public interface IPeselValidator
     {

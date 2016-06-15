@@ -9,7 +9,7 @@
           <ScalarProperty Name="AccountLogin" ColumnName="AccountLogin" />
           <ScalarProperty Name="AccountPassword" ColumnName="AccountPassword" />
           <ScalarProperty Name="FK_OwnerPesel" ColumnName="FK_OwnerPesel" />
-          <ScalarProperty Name="Casch" ColumnName="Casch" />
+          <ScalarProperty Name="Cash" ColumnName="Cash" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

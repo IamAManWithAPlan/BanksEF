@@ -17,5 +17,5 @@ C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDllTests\obj\Debug\BanksDllTests.c
 C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDllTests\obj\Debug\BanksDllTests.dll
 C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDllTests\obj\Debug\BanksDllTests.pdb
 C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDllTests\bin\Debug\BanksDllTests.dll.config
-C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDllTests\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDllTests\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDllTests\bin\Debug\AutoMapper.dll
+C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDllTests\bin\Debug\AutoMapper.xml

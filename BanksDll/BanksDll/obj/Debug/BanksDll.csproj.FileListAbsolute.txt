@@ -6,8 +6,10 @@ C:\Users\Andzej\Desktop\Banks\BanksDll\BanksDll\obj\Debug\BanksDll.pdb
 C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDll\bin\Debug\BanksDll.dll.config
 C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDll\bin\Debug\BanksDll.dll
 C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDll\bin\Debug\BanksDll.pdb
+C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDll\bin\Debug\AutoMapper.dll
 C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDll\bin\Debug\EntityFramework.dll
 C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDll\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDll\bin\Debug\AutoMapper.xml
 C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDll\bin\Debug\EntityFramework.xml
 C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDll\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Andzej\Desktop\BanksEF\BanksDll\BanksDll\obj\Debug\BanksDll.csprojResolveAssemblyReference.cache

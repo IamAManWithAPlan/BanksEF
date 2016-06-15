@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=4.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -79,14 +83,23 @@
       <DependentUpon>BankModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ClientValidators\AccountModel.cs" />
-    <Compile Include="ClientValidators\IAccountValidator.cs" />
-    <Compile Include="ClientValidators\PasswordValidator.cs" />
-    <Compile Include="ClientValidators\PeselValidator\IPeselValidator.cs" />
-    <Compile Include="ClientValidators\PeselValidator\PeselDataBaseValidator.cs" />
-    <Compile Include="ClientValidators\PeselValidator\PeselDate.cs" />
-    <Compile Include="ClientValidators\PeselValidator\PeselDateValidator.cs" />
-    <Compile Include="ClientValidators\PeselValidator\PeselNumbersValidator.cs" />
-    <Compile Include="ClientValidators\PeselValidator\PeselValidator.cs" />
+    <Compile Include="ClientValidators\BankAccountLoginGenerator.cs" />
+    <Compile Include="ClientValidators\BankAccountNumberGenerator.cs" />
+    <Compile Include="ClientValidators\GenerateAccDetails.cs" />
+    <Compile Include="ClientValidators\InsertAccountToDb.cs" />
+    <Compile Include="ClientValidators\InsertClientToDb.cs" />
+    <Compile Include="ClientValidators\Interfaces\IAccountDetailsGenerator.cs" />
+    <Compile Include="ClientValidators\Interfaces\IAccountValidator.cs" />
+    <Compile Include="ClientValidators\Interfaces\IDbSave.cs" />
+    <Compile Include="ClientValidators\Interfaces\IPeselValidator.cs" />
+    <Compile Include="ClientValidators\Validators\FullModelValidate.cs" />
+    <Compile Include="ClientValidators\Validators\NameLengthValidator.cs" />
+    <Compile Include="ClientValidators\Validators\PasswordValidator.cs" />
+    <Compile Include="ClientValidators\Validators\PeselDataBaseValidator.cs" />
+    <Compile Include="ClientValidators\Validators\PeselDate.cs" />
+    <Compile Include="ClientValidators\Validators\PeselDateValidator.cs" />
+    <Compile Include="ClientValidators\Validators\PeselNumbersValidator.cs" />
+    <Compile Include="ClientValidators\Validators\PeselValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>BankModel.tt</DependentUpon>
@@ -96,13 +109,11 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.Config" />
     <EntityDeploy Include="BankModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>BankModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.Config" />
     <None Include="BankModel.edmx.diagram">
       <DependentUpon>BankModel.edmx</DependentUpon>
     </None>

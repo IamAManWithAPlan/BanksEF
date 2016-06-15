@@ -1,4 +1,6 @@
-﻿namespace BanksDll.ClientValidators
+﻿using BanksDll.ClientValidators.Interfaces;
+
+namespace BanksDll.ClientValidators.Validators
 {
     public class PasswordValidator : IAccountValidator
     {

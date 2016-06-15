@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-namespace BanksDll.ClientValidators.PeselValidator
+namespace BanksDll.ClientValidators.Validators
 {
     public class PeselDate
     {

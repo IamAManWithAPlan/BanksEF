@@ -19,6 +19,6 @@ namespace BanksDll
         public string AccountLogin { get; set; }
         public string AccountPassword { get; set; }
         public string FK_OwnerPesel { get; set; }
-        public decimal Casch { get; set; }
+        public decimal Cash { get; set; }
     }
 }

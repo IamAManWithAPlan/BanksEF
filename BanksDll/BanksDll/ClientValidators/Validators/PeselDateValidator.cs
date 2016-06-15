@@ -1,4 +1,6 @@
-﻿namespace BanksDll.ClientValidators.PeselValidator
+﻿using BanksDll.ClientValidators.Interfaces;
+
+namespace BanksDll.ClientValidators.Validators
 {
     public class PeselDateValidator : IPeselValidator
     {

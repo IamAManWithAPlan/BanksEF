@@ -1,4 +1,4 @@
-﻿namespace BanksDll.ClientValidators
+﻿namespace BanksDll.ClientValidators.Interfaces
 {
     public interface IAccountValidator
     {

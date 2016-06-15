@@ -9,7 +9,7 @@
     <Property Name="AccountLogin" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="AccountPassword" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="FK_OwnerPesel" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="Casch" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="Cash" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
   </EntityType>
   <EntityType Name="Accounts">
     <Key>

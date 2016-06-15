@@ -1,6 +1,7 @@
 ﻿using System.Linq;
+using BanksDll.ClientValidators.Interfaces;
 
-namespace BanksDll.ClientValidators.PeselValidator
+namespace BanksDll.ClientValidators.Validators
 {
     public class PeselDataBaseValidator : IPeselValidator
     {

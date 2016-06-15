@@ -1,5 +1,6 @@
 ﻿using BanksDll.ClientValidators;
-using BanksDll.ClientValidators.PeselValidator;
+using BanksDll.ClientValidators.Interfaces;
+using BanksDll.ClientValidators.Validators;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BanksDllTests
