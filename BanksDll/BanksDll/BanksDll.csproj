@@ -62,21 +62,16 @@
     <Compile Include="AccountFiles\BankAccountLoginGenerator.cs" />
     <Compile Include="AccountFiles\BankAccountNumberGenerator.cs" />
     <Compile Include="AccountFiles\GenerateAccDetails.cs" />
-    <Compile Include="AccountFiles\InsertAccountToDb.cs" />
-    <Compile Include="AccountFiles\InsertClientToDb.cs" />
     <Compile Include="AccountFiles\Interfaces\IAccountDetailsGenerator.cs" />
     <Compile Include="AccountFiles\Interfaces\IAccountValidator.cs" />
     <Compile Include="AccountFiles\Interfaces\IDbSave.cs" />
-    <Compile Include="AccountFiles\Interfaces\IPeselValidator.cs" />
-    <Compile Include="AccountFiles\JoinAccountToClient.cs" />
-    <Compile Include="AccountFiles\Validators\FullModelValidate.cs" />
+    <Compile Include="AccountFiles\Validators\AccountModelVaildator.cs" />
     <Compile Include="AccountFiles\Validators\NameLengthValidator.cs" />
     <Compile Include="AccountFiles\Validators\PasswordValidator.cs" />
     <Compile Include="AccountFiles\Validators\PeselDataBaseValidator.cs" />
     <Compile Include="AccountFiles\Validators\PeselDate.cs" />
     <Compile Include="AccountFiles\Validators\PeselDateValidator.cs" />
     <Compile Include="AccountFiles\Validators\PeselNumbersValidator.cs" />
-    <Compile Include="AccountFiles\Validators\PeselValidator.cs" />
     <Compile Include="Accounts.cs">
       <DependentUpon>BankModel.tt</DependentUpon>
     </Compile>
@@ -98,6 +93,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BankModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="DB\InsertAccountToDb.cs" />
+    <Compile Include="DB\InsertClientToDb.cs" />
+    <Compile Include="DB\JoinAccountToClient.cs" />
     <Compile Include="Client.cs">
       <DependentUpon>BankModel.tt</DependentUpon>
     </Compile>

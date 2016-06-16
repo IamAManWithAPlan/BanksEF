@@ -8,12 +8,14 @@ namespace BanksDll.AccountFiles.Validators
     {
         public static bool Validate(AccountModel model)
         {
-            var validators = new List<IAccountValidator>()
-        {
-            new PeselValidator(),
-            new NameLengthValidator(),
-            new PasswordValidator()
-        };
+            var validators = new List<IAccountValidator>
+            {
+                new NameLengthValidator(),
+                new PasswordValidator(),
+                new PeselNumbersValidator(),
+                new PeselDateValidator(),
+                new PeselDataBaseValidator()
+            };
             return validators.All(x => x.Validate(model));
         }
     }

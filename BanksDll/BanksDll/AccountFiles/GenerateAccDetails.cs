@@ -8,7 +8,7 @@ namespace BanksDll.AccountFiles
     {
         public static void Generate(AccountModel model)
         {
-            if (!FullModelValidate.Validate(model)) return;
+            if (!AccountModelVaildator.Validate(model)) return;
             var generatorsList = new List<IAccountDetailsGenerator>()
             {
                 new BankAccountLoginGenerator(),

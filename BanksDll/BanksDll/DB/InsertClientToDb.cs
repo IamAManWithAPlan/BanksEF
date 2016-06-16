@@ -1,7 +1,8 @@
 ﻿using AutoMapper;
+using BanksDll.AccountFiles;
 using BanksDll.AccountFiles.Interfaces;
 
-namespace BanksDll.AccountFiles
+namespace BanksDll.DB
 {
     public class InsertClientToDb : IDbSave
     {
@@ -12,6 +13,7 @@ namespace BanksDll.AccountFiles
                 Mapper.Initialize(cfg => cfg.CreateMap<AccountModel, Client>());
                 context.Client.Add(Mapper.Map<Client>(model));
                 context.SaveChanges();
+               
             }
         }
     }

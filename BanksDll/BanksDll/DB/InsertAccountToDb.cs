@@ -1,7 +1,8 @@
 ﻿using AutoMapper;
+using BanksDll.AccountFiles;
 using BanksDll.AccountFiles.Interfaces;
 
-namespace BanksDll.AccountFiles
+namespace BanksDll.DB
 {
     public class InsertAccountToDb : IDbSave
     {

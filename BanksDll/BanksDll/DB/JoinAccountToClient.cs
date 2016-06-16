@@ -1,7 +1,8 @@
 ﻿using System.Linq;
+using BanksDll.AccountFiles;
 using BanksDll.AccountFiles.Interfaces;
 
-namespace BanksDll.AccountFiles
+namespace BanksDll.DB
 {
     public class JoinAccountToClient : IDbSave
     {
@@ -13,13 +14,13 @@ namespace BanksDll.AccountFiles
                 {
                     FKAccount_Number = model.AccountNumber,
                     FKClientPesel = model.Pesel,
-                    FKBankID = getBankId(model.BankName)
+                    FKBankID = GetBankId(model.BankName)
                 });
                 context.SaveChanges();
             }
         }
 
-        private int getBankId(string bankName)
+        private int GetBankId(string bankName)
         {
             using (var context = new BanksEntities())
             {

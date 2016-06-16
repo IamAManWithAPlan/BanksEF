@@ -2,16 +2,16 @@
 
 namespace BanksDll.AccountFiles.Validators
 {
-    public class PeselDateValidator : IPeselValidator
+    public class PeselDateValidator : IAccountValidator
     {
-        public bool Validate(string pesel)
+        public bool Validate(AccountModel model)
         {
             var peselDate = new PeselDate();
 
-            if (peselDate.GetMouthFromPesel(pesel) > 12 || peselDate.GetMouthFromPesel(pesel) <= 0) return false;
+            if (peselDate.GetMouthFromPesel(model.Pesel) > 12 || peselDate.GetMouthFromPesel(model.Pesel) <= 0) return false;
             int[] daysInMonth = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-            if (IsLeap(peselDate.GetYearFromPesel(pesel))) daysInMonth[1] = 29;
-            return peselDate.GetDayFromPesel(pesel) <= daysInMonth[peselDate.GetMouthFromPesel(pesel) - 1];
+            if (IsLeap(peselDate.GetYearFromPesel(model.Pesel))) daysInMonth[1] = 29;
+            return peselDate.GetDayFromPesel(model.Pesel) <= daysInMonth[peselDate.GetMouthFromPesel(model.Pesel) - 1];
         }
 
 
